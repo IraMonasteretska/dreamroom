@@ -1,0 +1,436 @@
+.topnavsect {
+    padding: 40px 36px 18px;
+
+    .buble-btn {
+        display: inline-flex;
+        width: 100%;
+    }
+}
+
+.back {
+    color: #191B21;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+
+    svg {
+        margin-right: 12px;
+        width: 24px;
+
+        path {
+            transition: 0.3s;
+        }
+    }
+
+    &:hover {
+        color: #715CC5;
+
+        svg path {
+            fill: #715CC5;
+        }
+    }
+}
+
+.coltitle {
+    min-height: 80px;
+    border-radius: 50px;
+    background: #EBEBEB;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    i {
+        width: 100%;
+        max-width: 52px;
+        flex: 0 0 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: linear-gradient(to right, #715CC5, #3C2696);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-style: normal;
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+        max-width: calc(100% - 52px);
+        flex: 0 0 calc(100% - 52px);
+        padding-left: 20px;
+        color: #191B21;
+        font-size: 28px;
+        font-weight: 500;
+    }
+}
+
+.upload-section {
+    background: #EEEEEE;
+    border-radius: 40px;
+    padding: 32px;
+}
+
+.file-upload {
+    .image-box {
+        margin: 0 auto;
+        width: 100%;
+        background: #F7F5F9 !important;
+        cursor: pointer;
+        overflow: hidden;
+        height: 526px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 2px dashed #7f7f7f95;
+
+        img {
+            max-width: 100%;
+            /* Щоб зображення не виходило за межі контейнера */
+            max-height: 100%;
+            /* Обмеження висоти */
+            transition: transform 0.2s ease-in-out;
+            /* Анімація при масштабуванні */
+        }
+
+        p {
+            img {
+                width: 68px;
+                margin-bottom: 28px;
+            }
+
+            .title {
+                color: #191B21;
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 12px;
+                display: block;
+            }
+
+            .descr {
+                max-width: 455px;
+                margin: 0 auto 20px;
+                display: block;
+                color: #7F7F7F;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .uplbtn {
+                height: 64px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 204px;
+                border-radius: 40px;
+                border: 1px solid #191B21;
+                color: #191B21;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#slider {
+    margin-top: 50px;
+    border: none;
+    background: linear-gradient(to right, #715CC5, #3C2696);
+    border-radius: 20px;
+
+    span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        background: linear-gradient(to right, #715CC5, #3C2696);
+        outline: none;
+    }
+}
+
+.designswrappers {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* Два ряди */
+    grid-auto-flow: column;
+    /* Горизонтальне розташування елементів */
+    gap: 20px;
+    /* Відступи між елементами */
+    overflow-x: scroll;
+    /* Горизонтальний скрол */
+    overflow-y: hidden;
+    /* Приховати вертикальний скрол */
+    white-space: nowrap;
+    /* Заборонити переноси */
+    scroll-behavior: smooth;
+    /* Плавний скролінг */
+    padding: 10px;
+    /* Внутрішні відступи */
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #EEEEEE;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, #715CC5, #3C2696);
+        border-radius: 10px;
+    }
+}
+
+.designbox {
+    width: 285px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+
+    input {
+        display: none;
+
+        &:checked+label {
+            border: 2px solid #191B21;
+        }
+    }
+}
+
+.imgwrap img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.designbox-label {
+    background: #EEEEEE;
+    padding: 11px 14px 15px 14px;
+    border-radius: 40px;
+    display: block;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    .imgwrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        height: 175px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            vertical-align: top;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #191B21;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.search-design {
+    width: 100%;
+    margin-top: 30px;
+
+    input {
+        width: 100%;
+        height: 80px;
+        padding-left: 40px;
+        border: 1px solid #7F7F7F;
+        border-radius: 50px;
+        color: #7F7F7F;
+        font-size: 24px;
+        outline: none;
+    }
+}
+
+.uploadsection {
+    padding-bottom: 100px;
+}
+
+.col-ting {
+    position: relative;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    background-image: url('../img/closeimg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    border: none;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+    border: 1px solid #EBEBEB;
+}
+
+@media(max-width:1600.8px) {
+    .coltitle {
+        padding: 14px;
+
+        p {
+            font-size: 21px;
+            padding-left: 15px;
+        }
+    }
+
+    .coltitle i {
+        font-size: 21px;
+        max-width: 42px;
+        flex: 0 0 42px;
+        height: 42px;
+    }
+
+    .coltitle {
+        min-height: 60px;
+    }
+
+    .designbox {
+        width: 225px;
+
+    }
+
+    .designbox-label {
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .designbox-label .imgwrap {
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .designbox-label p {
+        font-size: 16px;
+    }
+
+    .search-design input {
+        height: 60px;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    .file-upload .image-box {
+        height: 460px;
+    }
+
+    .file-upload .image-box p .title {
+        font-size: 21px;
+    }
+
+    .file-upload .image-box p .descr {
+        font-size: 15px;
+    }
+
+    .file-upload .image-box p .uplbtn {
+        height: 50px;
+        font-size: 16px;
+        width: 180px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .back {
+        font-size: 16px;
+
+        svg {
+            margin-right: 6px;
+        }
+    }
+
+    .coltitle p {
+        font-size: 18px;
+        padding-left: 10px;
+        max-width: calc(100% - 36px);
+        flex: 0 0 calc(100% - 36px);
+    }
+
+    .coltitle i {
+        font-size: 16px;
+        max-width: 36px;
+        flex: 0 0 36px;
+        height: 36px;
+    }
+
+    .coltitle {
+        min-height: 50px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .upload-section {
+        border-radius: 30px;
+        padding: 24px;
+    }
+
+
+    .file-upload .image-box p img {
+        width: 40px;
+        margin-bottom: 10px;
+        vertical-align: top;
+    }
+
+    .file-upload .image-box p .title {
+        font-size: 18px;
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .file-upload .image-box p .descr {
+        padding: 0 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .file-upload .image-box p .uplbtn {
+        font-size: 15px;
+        height: 42px;
+        width: 160px;
+    }
+
+    #slider {
+        margin-top: 30px;
+        height: 10px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .back {
+        font-size: 18px;
+    }
+
+
+
+
+
+    
+}
