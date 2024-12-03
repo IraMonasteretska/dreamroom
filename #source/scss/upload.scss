@@ -258,6 +258,11 @@
         color: #7F7F7F;
         font-size: 24px;
         outline: none;
+        transition: 0.3s;
+
+        &:focus {
+            border-color: #715CC5;
+        }
     }
 }
 
@@ -289,6 +294,12 @@
     display: none;
     border: 1px solid #EBEBEB;
 }
+
+.uploadsection {
+    padding-right: 36px;
+    padding-left: 36px;
+}
+
 
 @media(max-width:1600.8px) {
     .coltitle {
@@ -421,6 +432,11 @@
         height: 10px;
     }
 
+    .topnavsect,
+    .uploadsection {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media(max-width:991.8px) {
@@ -428,9 +444,14 @@
         font-size: 18px;
     }
 
+    .upload-section {
+        margin-bottom: 30px;
+    }
+
+    .file-upload .image-box {
+        height: 400px;
+    }
 
 
 
-
-    
 }

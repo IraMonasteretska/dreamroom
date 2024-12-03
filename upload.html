@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/twentytwenty.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-4">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="logo" class="descrlogo">
+                            <img src="img/logo-mob.svg" alt="logo" class="moblogo">
+                        </a>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 mobilemenu">
+                        <button class="closemenu">
+                            <img src="img/close.png" alt="close">
+                        </button>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Solutions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-8 col-8">
+                        <div class="header__rightsect">
+                            <button class="header__cart">
+                                <img src="img/cart.svg" alt="cart">
+                                <span class="label">12</span>
+                            </button>
+                            <a href="#" class="border-btn">Generate</a>
+                            <button class="menubtn">
+                                <img src="img/menu.png" alt="menu">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="topnavsect">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#" class="back">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.25 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H5.25C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25Z"
+                                        fill="black" />
+                                    <path
+                                        d="M5.56038 12L11.7809 18.219C11.9217 18.3598 12.0008 18.5508 12.0008 18.75C12.0008 18.9492 11.9217 19.1402 11.7809 19.281C11.64 19.4218 11.449 19.5009 11.2499 19.5009C11.0507 19.5009 10.8597 19.4218 10.7189 19.281L3.96888 12.531C3.89903 12.4613 3.84362 12.3786 3.80581 12.2875C3.768 12.1963 3.74854 12.0987 3.74854 12C3.74854 11.9014 3.768 11.8037 3.80581 11.7126C3.84362 11.6214 3.89903 11.5387 3.96888 11.469L10.7189 4.719C10.8597 4.57817 11.0507 4.49905 11.2499 4.49905C11.449 4.49905 11.64 4.57817 11.7809 4.719C11.9217 4.85983 12.0008 5.05084 12.0008 5.25C12.0008 5.44916 11.9217 5.64017 11.7809 5.781L5.56038 12Z"
+                                        fill="black" />
+                                </svg>
+                                Virtual staging
+                            </a>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <a href="#" class="buble-btn">
+                                <span>
+                                    Submit
+                                </span>
+                                <i>
+                                    <img src="img/arrow.svg" alt="arrow">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadsection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="coltitle">
+                                <i>1</i>
+                                <p> Upload photo</p>
+                            </div>
+                            <div class="upload-section">
+                                <div class="col-ting">
+                                    <div class="control-group file-upload" id="file-upload1">
+                                        <div class="image-box text-center">
+                                            <p>
+                                                <img src="img/upload.svg" alt="img">
+                                                <span class="title">Ready to showcase your space?</span>
+                                                <span class="descr">
+                                                    Drag and drop or upload your image. PNG, JPEG, JPG, HEIC & HEIF
+                                                    files are allowed. No larger than 25MB.
+                                                </span>
+                                                <span class="uplbtn">
+                                                    Choose image
+                                                </span>
+                                            </p>
+                                            <img src="" alt="">
+                                            <button class="remove-btn" style="display: none;"></button>
+                                        </div>
+                                        <div class="controls" style="display: none;">
+                                            <input type="file" name="contact_image_1" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="slider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="coltitle">
+                                <i>2</i>
+                                <p>Choose design style</p>
+                            </div>
+                            <div class="designswrappers">
+                                <div class="designbox">
+                                    <input type="radio" id="1" name="style">
+                                    <label for="1" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design1.jpg" alt="img">
+                                        </div>
+                                        <p>Minimalism</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="2" name="style">
+                                    <label for="2" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design2.jpg" alt="img">
+                                        </div>
+                                        <p>Art Deco</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="3" name="style">
+                                    <label for="3" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design3.jpg" alt="img">
+                                        </div>
+                                        <p>Industrial loft</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="4" name="style">
+                                    <label for="4" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design4.jpg" alt="img">
+                                        </div>
+                                        <p>Mid-century Modern</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="5" name="style">
+                                    <label for="5" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design5.jpg" alt="img">
+                                        </div>
+                                        <p>VIntage</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="6" name="style">
+                                    <label for="6" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design6.jpg" alt="img">
+                                        </div>
+                                        <p>Scandinavian</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="5" name="style">
+                                    <label for="5" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design5.jpg" alt="img">
+                                        </div>
+                                        <p>VIntage</p>
+                                    </label>
+                                </div>
+                                <div class="designbox">
+                                    <input type="radio" id="6" name="style">
+                                    <label for="6" class="designbox-label">
+                                        <div class="imgwrap">
+                                            <img src="img/design6.jpg" alt="img">
+                                        </div>
+                                        <p>Scandinavian</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="search-design">
+                                <input type="text" placeholder="or type your own style">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer__top">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Solutions</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer__email">
+                                <a href="mailto:support@dreamroom.com">support@dreamroom.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>
+                        2024. All rights reserved
+                    </p>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0742 4.894C17.2125 3.03989 14.6917 1.99924 12.0642 2C6.59823 2 2.13023 6.437 2.13023 11.904C2.13023 13.672 2.58023 15.344 3.44823 16.887L2.03223 22L7.33823 20.65C8.78523 21.421 10.4252 21.871 12.0972 21.871C17.5312 21.839 21.9672 17.401 21.9672 11.904C21.9672 9.267 20.9392 6.791 19.0742 4.894ZM12.0322 20.167C10.5463 20.1593 9.09048 19.748 7.82023 18.977L7.49823 18.785L4.37923 19.588L5.24823 16.566L5.05523 16.244C4.2433 14.9178 3.80933 13.3949 3.80023 11.84C3.80023 7.306 7.46523 3.64 12.0312 3.64C14.2182 3.64 16.2762 4.509 17.8192 6.052C18.5872 6.8203 19.1956 7.73285 19.6095 8.73717C20.0235 9.74148 20.2348 10.8177 20.2312 11.904C20.2952 16.503 16.5652 20.168 12.0312 20.168M16.5652 13.995C16.3082 13.866 15.1182 13.255 14.8292 13.223C14.6042 13.126 14.4112 13.094 14.2822 13.352C14.1532 13.609 13.6392 14.123 13.5102 14.316C13.3822 14.445 13.2532 14.509 12.9642 14.348C12.7062 14.22 11.9342 13.995 10.9702 13.094C10.2302 12.451 9.71623 11.647 9.62023 11.358C9.49123 11.101 9.58723 11.004 9.74823 10.843C9.87723 10.715 10.0062 10.586 10.1022 10.393C10.2312 10.265 10.2312 10.136 10.3592 9.975C10.4882 9.847 10.3912 9.654 10.3272 9.525C10.2312 9.397 9.78023 8.175 9.55523 7.66C9.36223 7.146 9.13723 7.242 9.00923 7.242H8.55923C8.42923 7.242 8.10923 7.274 7.91523 7.564C7.69023 7.821 7.04723 8.432 7.04723 9.654C7.04723 10.876 7.91523 12.001 8.07723 12.226C8.20523 12.355 9.84523 14.895 12.2892 15.988C12.8672 16.245 13.3172 16.406 13.7032 16.535C14.2822 16.728 14.8292 16.663 15.2472 16.631C15.7292 16.599 16.6942 16.052 16.9192 15.441C17.1122 14.895 17.1122 14.348 17.0472 14.251C16.9832 14.188 16.7902 14.091 16.5652 13.995Z"
+                                        fill="#F7F5F9" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.9408 10.392L21.5353 1.5H19.7353L13.1428 9.2205L7.87481 1.5H1.7998L9.76481 13.176L1.7998 22.5H3.5998L10.5628 14.346L16.1263 22.5H22.2013L13.9408 10.392ZM11.4763 13.278L10.6693 12.1155L4.2478 2.865H7.01231L12.1933 10.3305L13.0003 11.493L19.7368 21.198H16.9723L11.4763 13.278Z"
+                                        fill="#F7F5F9" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z"
+                                        stroke="#F7F5F9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z"
+                                        stroke="#F7F5F9" stroke-width="1.5" />
+                                    <path d="M17.5 6.51002L17.51 6.49902" stroke="#F7F5F9" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/jquery.event.move.js"></script>
+    <script src="js/lib/jquery.twentytwenty.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
