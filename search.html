@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/twentytwenty.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-4">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="logo" class="descrlogo">
+                            <img src="img/logo-mob.svg" alt="logo" class="moblogo">
+                        </a>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 mobilemenu">
+                        <button class="closemenu">
+                            <img src="img/close.png" alt="close">
+                        </button>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Solutions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-8 col-8">
+                        <div class="header__rightsect">
+                            <button class="header__cart">
+                                <img src="img/cart.svg" alt="cart">
+                                <span class="label">12</span>
+                            </button>
+                            <a href="#" class="border-btn">Generate</a>
+                            <button class="menubtn">
+                                <img src="img/menu.png" alt="menu">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="topnavsect">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#" class="back">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.25 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H5.25C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25Z"
+                                        fill="black" />
+                                    <path
+                                        d="M5.56038 12L11.7809 18.219C11.9217 18.3598 12.0008 18.5508 12.0008 18.75C12.0008 18.9492 11.9217 19.1402 11.7809 19.281C11.64 19.4218 11.449 19.5009 11.2499 19.5009C11.0507 19.5009 10.8597 19.4218 10.7189 19.281L3.96888 12.531C3.89903 12.4613 3.84362 12.3786 3.80581 12.2875C3.768 12.1963 3.74854 12.0987 3.74854 12C3.74854 11.9014 3.768 11.8037 3.80581 11.7126C3.84362 11.6214 3.89903 11.5387 3.96888 11.469L10.7189 4.719C10.8597 4.57817 11.0507 4.49905 11.2499 4.49905C11.449 4.49905 11.64 4.57817 11.7809 4.719C11.9217 4.85983 12.0008 5.05084 12.0008 5.25C12.0008 5.44916 11.9217 5.64017 11.7809 5.781L5.56038 12Z"
+                                        fill="black" />
+                                </svg>
+                                Back
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadsection searchsection">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="coltitle df">
+                                <a href="#" class="srchupl">
+                                    Upload new image
+                                </a>
+                                <a href="#" class="srchreg">
+                                    <span>Regenerate</span>
+                                    <i>
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.46668 15.5717C5.46668 16.0276 5.5009 16.4864 5.56935 16.948C5.63584 17.4106 5.74926 17.8674 5.90962 18.3186C5.97513 18.5221 5.96779 18.7171 5.88762 18.9035C5.80744 19.0899 5.67739 19.2208 5.49748 19.2963C5.31366 19.3776 5.12642 19.3819 4.93575 19.3092C4.74508 19.2366 4.6165 19.098 4.55002 18.8935C4.35446 18.363 4.21366 17.8154 4.12762 17.2505C4.04157 16.6856 3.99904 16.126 4.00002 15.5717C4.00002 12.5715 5.07068 10.0177 7.21201 7.91022C9.35335 5.80275 11.9493 4.74853 15 4.74758L17.0343 4.74758L14.472 2.24441C14.3351 2.11061 14.2618 1.94621 14.252 1.75124C14.2422 1.55626 14.3156 1.38231 14.472 1.22938C14.6285 1.07646 14.8015 1 14.9912 1C15.1809 1 15.354 1.07646 15.5104 1.22938L19.0128 4.65439C19.2504 4.88569 19.3692 5.15569 19.3692 5.46441C19.3692 5.77312 19.2509 6.0436 19.0143 6.27585L15.5104 9.69943C15.3735 9.83323 15.2053 9.90492 15.0059 9.91447C14.8064 9.92403 14.6285 9.85235 14.472 9.69943C14.3156 9.5465 14.2373 9.37733 14.2373 9.19191C14.2373 9.00649 14.3156 8.83732 14.472 8.6844L17.0343 6.18123H15C12.3493 6.18123 10.0974 7.09256 8.24455 8.91522C6.39166 10.7379 5.4657 12.9567 5.46668 15.5717ZM24.5333 15.4283C24.5333 14.9724 24.4991 14.5136 24.4307 14.052C24.3642 13.5894 24.2508 13.133 24.0904 12.6829C24.0249 12.4783 24.0327 12.2829 24.1139 12.0965C24.195 11.9101 24.3246 11.7792 24.5025 11.7037C24.6864 11.6224 24.8692 11.6181 25.0511 11.6908C25.232 11.7634 25.3556 11.902 25.4221 12.1065C25.6177 12.6379 25.7629 13.1856 25.8577 13.7495C25.9526 14.3134 26 14.873 26 15.4283C26 18.4285 24.9293 20.9823 22.788 23.0898C20.6467 25.1973 18.0507 26.2515 15 26.2524H12.9672L15.5265 28.7556C15.6644 28.8894 15.7377 29.0543 15.7465 29.2502C15.7563 29.4442 15.683 29.6177 15.5265 29.7706C15.3711 29.9235 15.1985 30 15.0088 30C14.8191 30 14.6461 29.9235 14.4896 29.7706L10.9872 26.3456C10.7486 26.1153 10.6293 25.8453 10.6293 25.5356C10.6293 25.2259 10.7477 24.9559 10.9843 24.7256L14.4881 21.3006C14.625 21.1668 14.7932 21.0951 14.9927 21.0855C15.1921 21.076 15.3701 21.1476 15.5265 21.3006C15.683 21.4535 15.7612 21.6227 15.7612 21.8081C15.7612 21.9935 15.683 22.1627 15.5265 22.3156L12.9672 24.8188H15C17.6517 24.8188 19.9036 23.9074 21.7555 22.0848C23.6074 20.2621 24.5333 18.0433 24.5333 15.4283Z"
+                                                fill="url(#paint0_linear_2004_428)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_2004_428" x1="4" y1="15.5" x2="26"
+                                                    y2="15.5" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#715CC5" />
+                                                    <stop offset="1" stop-color="#3C2696" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="coltitle">
+                                <p>Recomended products</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                           
+                        </div>
+
+
+
+
+
+                        <div class="col-xl-6">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved1.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved4.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved5.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved6.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved7.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="savedprobox">
+                                        <div class="imgwrap">
+                                            <img class="savedimg" src="img/saved8.jpg" alt="img">
+                                            <div class="hoverelement">
+                                                <a href="img/saved1.jpg" data-fancybox="prod1" class="savedopen">
+                                                    <img src="img/icon_wide.png" alt="">
+                                                </a>
+                                                <a href="#">View on homestyle.co.nz</a>
+                                            </div>
+                                        </div>
+                                        <div class="descrprwrap">
+                                            <p class="title">
+                                                Bay Isle Home™ Aishpreet Wide Slipper Chair Brown
+                                            </p>
+                                            <a href="#" class="buynow ">
+                                                Add to cart - <span>$1600</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer__top">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Solutions</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer__email">
+                                <a href="mailto:support@dreamroom.com">support@dreamroom.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>
+                        2024. All rights reserved
+                    </p>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0742 4.894C17.2125 3.03989 14.6917 1.99924 12.0642 2C6.59823 2 2.13023 6.437 2.13023 11.904C2.13023 13.672 2.58023 15.344 3.44823 16.887L2.03223 22L7.33823 20.65C8.78523 21.421 10.4252 21.871 12.0972 21.871C17.5312 21.839 21.9672 17.401 21.9672 11.904C21.9672 9.267 20.9392 6.791 19.0742 4.894ZM12.0322 20.167C10.5463 20.1593 9.09048 19.748 7.82023 18.977L7.49823 18.785L4.37923 19.588L5.24823 16.566L5.05523 16.244C4.2433 14.9178 3.80933 13.3949 3.80023 11.84C3.80023 7.306 7.46523 3.64 12.0312 3.64C14.2182 3.64 16.2762 4.509 17.8192 6.052C18.5872 6.8203 19.1956 7.73285 19.6095 8.73717C20.0235 9.74148 20.2348 10.8177 20.2312 11.904C20.2952 16.503 16.5652 20.168 12.0312 20.168M16.5652 13.995C16.3082 13.866 15.1182 13.255 14.8292 13.223C14.6042 13.126 14.4112 13.094 14.2822 13.352C14.1532 13.609 13.6392 14.123 13.5102 14.316C13.3822 14.445 13.2532 14.509 12.9642 14.348C12.7062 14.22 11.9342 13.995 10.9702 13.094C10.2302 12.451 9.71623 11.647 9.62023 11.358C9.49123 11.101 9.58723 11.004 9.74823 10.843C9.87723 10.715 10.0062 10.586 10.1022 10.393C10.2312 10.265 10.2312 10.136 10.3592 9.975C10.4882 9.847 10.3912 9.654 10.3272 9.525C10.2312 9.397 9.78023 8.175 9.55523 7.66C9.36223 7.146 9.13723 7.242 9.00923 7.242H8.55923C8.42923 7.242 8.10923 7.274 7.91523 7.564C7.69023 7.821 7.04723 8.432 7.04723 9.654C7.04723 10.876 7.91523 12.001 8.07723 12.226C8.20523 12.355 9.84523 14.895 12.2892 15.988C12.8672 16.245 13.3172 16.406 13.7032 16.535C14.2822 16.728 14.8292 16.663 15.2472 16.631C15.7292 16.599 16.6942 16.052 16.9192 15.441C17.1122 14.895 17.1122 14.348 17.0472 14.251C16.9832 14.188 16.7902 14.091 16.5652 13.995Z"
+                                        fill="#F7F5F9" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.9408 10.392L21.5353 1.5H19.7353L13.1428 9.2205L7.87481 1.5H1.7998L9.76481 13.176L1.7998 22.5H3.5998L10.5628 14.346L16.1263 22.5H22.2013L13.9408 10.392ZM11.4763 13.278L10.6693 12.1155L4.2478 2.865H7.01231L12.1933 10.3305L13.0003 11.493L19.7368 21.198H16.9723L11.4763 13.278Z"
+                                        fill="#F7F5F9" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z"
+                                        stroke="#F7F5F9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z"
+                                        stroke="#F7F5F9" stroke-width="1.5" />
+                                    <path d="M17.5 6.51002L17.51 6.49902" stroke="#F7F5F9" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/jquery.event.move.js"></script>
+    <script src="js/lib/jquery.twentytwenty.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="js/lib/fancybox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

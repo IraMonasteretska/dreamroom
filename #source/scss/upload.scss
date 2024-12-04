@@ -455,3 +455,44 @@
 
 
 }
+
+@media(max-width:767.8px) {
+    .uploadsection {
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .topnavsect {
+        padding-top: 30px;
+
+        .buble-btn {
+
+            span,
+            i {
+                border: none;
+            }
+        }
+
+        .text-end {
+            text-align: left;
+        }
+
+        .back {
+            margin-bottom: 15px;
+        }
+
+
+    }
+
+    .upload-section {
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .file-upload .image-box {
+        border-width: 1px;
+    }
+
+    
+}
