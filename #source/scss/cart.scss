@@ -177,6 +177,10 @@
     margin-bottom: 30px;
 }
 
+.hoverelement a {
+    text-align: center;
+}
+
 @media(max-width:1599.8px) {
     .titlebox {
         min-height: 60px;
@@ -228,7 +232,32 @@
     }
 
     .savedprobox {
-        max-width: 270px;
         margin: 0 auto 30px;
+    }
+
+    .deletesaveprod, .savedopen {
+        top: 10px;
+        right: 10px;
+    }
+
+    .savedprobox .imgwrap:hover .savedopen {
+        top: calc(100% - 50px);
+    }
+
+    .deletesaveprod, .savedopen {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 24px;
+        }
+    }
+}
+
+@media(max-width:359.8px) {
+    .savedproducts {
+        .col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6 {
+            width: 100%;
+        }
     }
 }
